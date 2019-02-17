@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    
+
+
 </head>
 
-<body>
+<body onkeypress="return pulsar(event)">
     <nav>
         <div class="nav-wrapper blue">
             <a href="index.html" class="brand-logo center">Reporte</a>
@@ -39,7 +39,12 @@
         </div>
     </div>
 </body>
-
+<script>
+    function pulsar(e) {
+        tecla = (document.all) ? e.keyCode : e.which;
+        if (tecla == 13) return false;
+    }
+</script>
 <script src="busca.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
