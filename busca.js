@@ -23,15 +23,15 @@ function recibir() {
     });
 
     salida = `
-            <center> <h2>${newArray[0].nombre}</h2></center>
-            <center> <h5>${newArray[0].aPaterno} ${newArray[0].aMaterno}</h5></center>
+            <center> <h2 style="text-transform: uppercase;">${newArray[0].nombre}</h2></center>
+            <center> <h5 style="text-transform: uppercase;">${newArray[0].aPaterno} ${newArray[0].aMaterno}</h5></center>
             <hr>
             <div class="row">
                 <div class="col s12 m3 center">
                     <h4>Grupo:<br> <a class="waves-effect waves-light btn-large btn-floating teal darken-4" style="font-size:90%;">${newArray[0].grupo}</a></h4>
                 </div>
                 <div class="col s12 m3 center">
-                    <h5 >Equipo:<br> <a class="waves-effect btn-large waves-light white  blue-text" style="font-size:100%;">${newArray[0].equipo}</a> </h5>
+                    <h5 style="text-transform: uppercase;">Equipo:<br> <a class="waves-effect btn-large waves-light white  blue-text" style="font-size:100%;">${newArray[0].equipo}</a> </h5>
                 </div>
                 <div class="col s12 m3 center">
                     <h4>Asistencias:<br> <a class="waves-effect waves-light btn-large btn-floating red" style="font-size:90%;"> ${newArray[0].tOTALASIS}</a>
