@@ -1,1 +1,3 @@
-# Json-exp
+# Calificaciones
+
+Para revisar las calificaiones individuales 
