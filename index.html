@@ -7,16 +7,43 @@
     <title>JSON</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 </head>
 
 <body>
-
     
-  
-    <!-- <script type="text/javascript"
-        src="https://api.sheety.co/cba083a5-cc85-4703-a5d0-2307f8968d31">
-        </script> -->
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#" class="brand-logo center">Reporte</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="busqueda.html">Busqueda</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Busqueda</a></li>
+        
+    </ul>
+    <div class="container">
+        <br>
+        <!-- <div class="row">
+            <div class="col s10 m10 l10">
+                <input placeholder="buscar"></input>
+            </div>
+            <div class="col s2 m2 l2">
+                <a class="waves-effect waves-teal btn-flat btn-large"><img src="loupe.png" width="70%"></a>
+            </div>
+        </div> -->
+        <div id="lista" class="row">
+            Cargando...
+        </div>
+    </div>
 </body>
+<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="js.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 
 </html>

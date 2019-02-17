@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="index.html" class="brand-logo center">Reporte</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="busqueda.html">Busqueda</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <br>
+        <div class="row">
+
+            <form id="formulario" method="Post">
+                <div class="col s12 m12 l12">
+                    <input type="text" id="texto" placeholder="Busca por ID" onkeyup="recibir()"></input>
+                </div>
+                <!-- <div class="col s2 m2 l2">
+                    <input class="waves-effect waves-teal btn-flat" type="button" name="enviar" value="Enviar" onclick="recibir();" /><br>
+                </div> -->
+            </form>
+        </div>
+        <div id="resultado" class="row">
+            Cargando...
+        </div>
+    </div>
+</body>
+
+<script src="busca.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
