@@ -30,7 +30,7 @@ function recibir() {
                     <h4>Grupo:<br> <a class="waves-effect waves-light btn-large btn-floating teal darken-4" style="font-size:90%;">${newArray[0].grupo}</a></h4>
                 </div>
                 <div class="col s12 m3 center">
-                    <h5 style="text-transform: uppercase;">Equipo:<br> <a class="waves-effect btn-large waves-light white  blue-text" style="font-size:100%;">${newArray[0].equipo}</a> </h5>
+                    <h5 style="text-transform: uppercase;"><a class="waves-effect btn-large waves-light white  blue-text" style="font-size:100%;">${newArray[0].equipo}</a> </h5>
                 </div>
                 <div class="col s12 m3 center">
                     <h4>Asistencias:<br> <a class="waves-effect waves-light btn-large btn-floating red" style="font-size:90%;"> ${newArray[0].tOTALASIS}</a>
