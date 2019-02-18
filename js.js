@@ -1,4 +1,4 @@
-var obj
+/* var obj
 ft();
 function ft() {
     fetch('https://api.sheety.co/cba083a5-cc85-4703-a5d0-2307f8968d31')
@@ -10,14 +10,14 @@ function ft() {
             obj = data
             var salida = '';
             for (var i = 0; i < obj.length; i++) {
-                /* salida += `
+             salida += `
                 <ul>
                     <li>${obj[i].nombre} su apellido es ${obj[i].aPaterno} 
                             su otro apellido es ${obj[i].aMaterno} 
                             y  su equipo es ${obj[i].equipo}</li>
                 </ul>
-                            `; */
-               /*  salida+=` <div class="col s12 m6">
+                            `; 
+                salida+=` <div class="col s12 m6">
                                 <div class="card blue-grey darken-1">
                                     <div class="card-content white-text">
                                         <span class="card-title">${obj[i].nombre}</span>
@@ -33,7 +33,7 @@ function ft() {
                                     </div>
                                 </div>
                             </div>
-                        `; */
+                        `; 
                 salida+=`
                         <div class="col s12 m4 l4">
                             <div class="card blue lighten-5">
@@ -73,3 +73,4 @@ function ft() {
         });
 }
 setInterval('ft()', 120000);
+ */
