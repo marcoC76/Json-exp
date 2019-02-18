@@ -30,7 +30,7 @@ function recibir() {
                     <h4>Grupo:<br> <a class="waves-effect waves-light btn-large btn-floating teal darken-4" style="font-size:90%;">${newArray[0].grupo}</a></h4>
                 </div>
                 <div class="col s12 m3 center">
-                    <h5 style="text-transform: uppercase;"><a class="waves-effect btn-large waves-light white  blue-text" style="font-size:100%;">${newArray[0].equipo}</a> </h5>
+                    <h5 style="text-transform: uppercase;"><a class="waves-effect btn waves-light white  blue-text" style="font-size:100%;">${newArray[0].equipo}</a> </h5>
                 </div>
                 <div class="col s12 m3 center">
                     <h4>Asistencias:<br> <a class="waves-effect waves-light btn-large btn-floating red" style="font-size:90%;"> ${newArray[0].tOTALASIS}</a>
@@ -42,15 +42,16 @@ function recibir() {
             </div>
             <div class="row">
                 <div class="col s12 m12 center">
-                    <h4 id="estado" class="waves-effect waves-light btn-large purple" style="font-size:2em;"></h4>
-                    <h3>Calificación Final: <a class=" waves-effect waves-light btn-large black" style="font-size:90%;"> ${newArray[0].fINAL}</a> </h3>
+                    <h4 id="estado" class="waves-effect waves-light btn-large purple pulse" style="font-size:2em;"></h4>
+                    <h3>Calificación Final: <a class=" waves-effect waves-light btn-large black pulse" style="font-size:90%;"> ${newArray[0].fINAL}</a> </h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col s12 m6">
                     <div class="card grey lighten-2 hoverable">
                         <div class="card-content center">
-                        <span class="card-title center">Actividades</span>
+                            <span style="font-size:3em;font-weight:bold;" class="card-title center" >Actividades</span>
+                            <hr><br>
                             <h5>Puntos totales: <a class="waves-effect waves-light btn blue" style="font-size:90%;">${newArray[0].pUNTOSACT}</a>  
                             Promedio: <a class="waves-effect waves-light btn green" style="font-size:90%;">${newArray[0].pROMACT}</a></h5>
                             <canvas id="myChart" width="50"></canvas>
@@ -60,7 +61,8 @@ function recibir() {
                 <div class="col s12 m6">
                     <div class="card  teal lighten-4 hoverable">
                         <div class="card-content center">
-                        <span class="card-title center">Cuestionarios</span>
+                            <span style="font-size:3em;font-weight:bold;" class="card-title center">Cuestionarios</span>
+                            <hr><br>    
                             <h5>Puntos totales: <a class="waves-effect waves-light btn blue" style="font-size:90%;"> ${newArray[0].pUNTOSCUES}</a> 
                             Promedio: <a class="waves-effect waves-light btn green " style="font-size:90%;">${newArray[0].pROMCUES}</a></h5>
                             <canvas id="myChart2" width="50"></canvas>
@@ -72,7 +74,8 @@ function recibir() {
                 <div class="col s12 m6">
                     <div class="card red lighten-4 hoverable">
                         <div class="card-content center">
-                        <span class="card-title center">Proyecto</span>
+                            <span style="font-size:3em;font-weight:bold;" class="card-title center">Proyecto</span>
+                            <hr><br>
                             <h5>Puntos totales: <a class="waves-effect waves-light btn blue" style="font-size:90%;">${newArray[0].pUNTOSPRO}</a></h5>
                             <canvas id="myChart3" width="50"></canvas>
                         </div>
@@ -81,7 +84,8 @@ function recibir() {
                 <div class="col s12 m6">
                     <div class="card blue lighten-4 hoverable">
                         <div class="card-content center">
-                        <span class="card-title center">Bitacora</span>
+                            <span style="font-size:3em;font-weight:bold;" class="card-title center">Bitácora</span>
+                            <hr><br>
                             <h5>Puntos totales: <a class="waves-effect waves-light btn blue" style="font-size:90%;">${newArray[0].pUNTOSBIT}</a></h5>
                             <canvas id="myChart4" width="50"></canvas>
                         </div>

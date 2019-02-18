@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Calificaciones</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <link rel="manifest" href="site.json">
+    <link rel="manifest" href="/site.json">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -19,7 +19,7 @@
 <body onkeypress="return pulsar(event)" id="cont_escalable">
     <nav>
         <div class="nav-wrapper blue">
-            <a href="index.html" class="brand-logo center">CALIFICACIONES</a>
+            <a href="index.html" class="brand-logo center">1er Periodo</a>
         </div>
     </nav>
     <div class="container">
@@ -32,14 +32,18 @@
                     <input class="autocomplete validate" type="text" id="texto" onkeyup="recibir()"></input>
                     <label for="texto">Busca por ID</label>
                 </div>
-
-                <!-- <div class="col s2 m2 l2">
-                    <input class="waves-effect waves-teal btn-flat" type="button" name="enviar" value="Enviar" onclick="recibir();" /><br>
-                </div> -->
             </form>
         </div>
         <div id="resultado" class="row">
-
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel blue z-depth-5 hoverable">
+                    <div class="row center">
+                        <span class="white-text" style="font-size:1.5em;">
+                            Proporciona un ID valido para consultar el desglose de tus calificaciones
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
