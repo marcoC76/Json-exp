@@ -1,6 +1,6 @@
 var obj
 var salida = '';
-
+ft();
 function ft() {
     fetch('https://api.sheety.co/cba083a5-cc85-4703-a5d0-2307f8968d31')
         .then(function (response) {
