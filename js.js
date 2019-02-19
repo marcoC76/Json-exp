@@ -1,3 +1,6 @@
+
+  
+
 /* var obj
 ft();
 function ft() {

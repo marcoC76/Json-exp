@@ -1,6 +1,8 @@
 {
     "name": "CALIFICACIONES",
     "short_name": "Calificaciones",
+    "description": "Aplicación PWA para consultar calificaciones en tiempo real para Física 1",
+    "lang": "es-ES",
     "icons": [
         {
             "src": "favicon-16x16.png",
@@ -27,5 +29,5 @@
     "background_color": "#2196f3",
     "display": "standalone",
     "orientation": "portrait",
-    "start_url": "index.html?launcher=true"
+    "start_url": "./index.html?utm_source=web_app_manifest"
 }
