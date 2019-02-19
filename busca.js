@@ -14,7 +14,7 @@ function ft() {
         });
 }
 setInterval('ft()', 120000);
-ft();
+
 function recibir() {
     var valor = document.getElementById("texto").value;
     var newArray = obj.filter(function (el) {
