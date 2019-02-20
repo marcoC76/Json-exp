@@ -106,14 +106,13 @@ function recibir() {
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["Act1", "Act2", "Act3", "Act4", "Act5", "ActR"],
+            labels: ["Act1", "Act2", "Act4", "Act5", "ActR"],
             datasets: [{
                 label: 'Calificación',
-                data: [newArray[0].aCTIVIDAD1, newArray[0].aCTIVIDAD2, newArray[0].aCTIVIDAD3, newArray[0].aCTIVIDAD4, newArray[0].aCTIVIDAD5, newArray[0].aCTIVIDADR],
+                data: [newArray[0].aCTIVIDAD1, newArray[0].aCTIVIDAD2, newArray[0].aCTIVIDAD4, newArray[0].aCTIVIDAD5, newArray[0].aCTIVIDADR],
                 backgroundColor: [
                     'rgba(54, 162, 235, 0.6)',
                     'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
                     'rgba(255, 99, 132, 0.6)',
                     'rgba(200, 100, 150, 0.6)',
                     'rgba(153, 102, 255, 0.6)'
