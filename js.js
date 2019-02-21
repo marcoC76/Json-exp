@@ -1,4 +1,13 @@
+//service worker
 
+if ('serviceWorker' in navigator) {
+    console.log("Puedes");
+    navigator.serviceWorker.register('./sw.js')
+                            .then(res => console.log('sw cargado', res))
+                            .catch(err => console.log('no se pudo'));
+}else{
+    console.log("no puedes");
+}
   
 
 /* var obj
