@@ -1,7 +1,8 @@
-body{
+body {
     background-color: rgb(230, 230, 230);
 }
-#texto{
-    font-size:2.5em;
+
+#texto {
+    font-size: 2.5em;
     text-align: center;
 }
