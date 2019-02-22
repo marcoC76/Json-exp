@@ -4,6 +4,7 @@ const CACHE_NAME = 'v1_cache_calificaciones';
 //archivos para cache
 
 var urlsCache = [
+    './',
     './index.html',
     './js.js',
     './busca.js',
