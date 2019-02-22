@@ -4,10 +4,11 @@ const CACHE_NAME = 'v1_cache_calificaciones';
 //archivos para cache
 
 var urlsCache = [
-    './',
+    './index.html',
     './js.js',
     './busca.js',
     './main.css',
+    './Chart.min.js',
     './materialize.css',
     './apple-touch-icon.png',
     './favicon-512x512.png',

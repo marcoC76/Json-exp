@@ -55,7 +55,9 @@
           <li><a href="#">2do Periodo</a></li>
           <li><a href="#">3er Periodo</a></li>
         </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
       </div>
     </nav>
   </div>
@@ -100,6 +102,17 @@
           </div>
         </div>
       </div>
+      <div id="internet" class=" col s12 m8 offset-m2 l6 offset-l3">
+        <!-- <div class="card-panel red z-depth-5 hoverable">
+          <div class="row center">
+            <div class="container">
+              <span class="white-text" style="font-size:1.5em;">
+                Necesitas conexión a internet para consultar las calificaciones
+              </span>
+            </div>
+          </div>
+        </div> -->
+      </div>
     </div>
 
     <div class="fixed-action-btn">
@@ -134,12 +147,30 @@
         if (tecla == 13) return false;
       }
 
-
+      if (navigator.onLine) {
+        // el navegador está conectado a la red
+      } else {
+        // el navegador NO está conectado a la red
+        console.log("No hay internet");
+        var internet = `
+                          <div class="card-panel red z-depth-5 hoverable">
+                            <div class="row center">
+                              <div class="">
+                                <span class="white-text" style="font-size:2em;text-transform:upperCase;">
+                                  Necesitas conexión a internet para consultar las calificaciones
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        `
+        document.getElementById("internet").innerHTML = internet
+      }
 
     </script>
     <script src="busca.js"></script>
     <script src="js.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="Chart.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
     <!--  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
