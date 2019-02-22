@@ -1,5 +1,5 @@
 // asignar nombre y version
-const CACHE_NAME = 'v1_cache_calificaciones';
+var CACHE_NAME = 'v1_cache_calificaciones';
 
 //archivos para cache
 
@@ -22,46 +22,49 @@ var urlsCache = [
 ];
 
 //instala y guarda los recursos
-self.addEventListener('install', e => {
-    e.waitUntil(
+self.addEventListener('install', function (event) {
+    // Perform install steps
+    event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(cache => {
-                return cache.addAll(urlsCache)
-                    .then(() => {
-                        self.skipWaiting();
-                    })
-            })
-            .catch(err => {
-                console.log('no se pudo cachear');
-            })
-    )
-});
-
-//activar
-
-self.addEventListener('activate', e => {
-    const cacheWhitelist = [CACHE_NAME];
-    e.waitUntil(
-        caches.keys()
-            .then(cachesNames => {
-                return Promise.all(
-                    cachesNames.map(cacheName => {
-                        if (cacheWhitelist.indexOf(cacheName) === -1) {
-                            //borar
-                            return caches.delete(cacheName);
-                        }
-                    })
-                );
-            })
-            .then(() => {
-                self.clients.claim();
+            .then(function (cache) {
+                console.log('Opened cache');
+                return cache.addAll(urlsCache);
             })
     );
 });
 
-//fetch
+//activar
 
-self.addEventListener('fetch', e => {
+self.addEventListener('activate', function (event) {
+    const cacheWhitelist = [CACHE_NAME];
+    event.waitUntil(
+        caches.keys().then(function (cacheNames) {
+            return Promise.all(
+                cacheNames.map(function (cacheName) {
+                    if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
+});
+
+//fetch
+self.addEventListener('fetch', function (event) {
+    event.respondWith(
+        caches.match(event.request)
+            .then(function (response) {
+                // Cache hit - return response
+                if (response) {
+                    return response;
+                }
+                return fetch(event.request);
+            }
+            )
+    );
+});
+/* self.addEventListener('fetch', e => {
     e.respondWith(caches.match(e.request)
             .then(res => {
                 if (res) {
@@ -70,4 +73,4 @@ self.addEventListener('fetch', e => {
                 return fetch(e.request);
             })
     );
-});
+}); */

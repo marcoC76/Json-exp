@@ -1,15 +1,26 @@
 
 //service worker
 
-if ('serviceWorker' in navigator) {
+/* if ('serviceWorker' in navigator) {
     console.log("Puedes");
+
     navigator.serviceWorker.register('./sw.js')
-                            .then(res => console.log('sw cargado', res))
-                            .catch(err => console.log('no se pudo'));
-}else{
+        .then(res => console.log('sw cargado', res))
+        .catch(err => console.log('no se pudo'));
+} else {
     console.log("no puedes");
-}
-  
+} */
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
 
 /* var obj
 ft();
@@ -25,11 +36,11 @@ function ft() {
             for (var i = 0; i < obj.length; i++) {
              salida += `
                 <ul>
-                    <li>${obj[i].nombre} su apellido es ${obj[i].aPaterno} 
-                            su otro apellido es ${obj[i].aMaterno} 
+                    <li>${obj[i].nombre} su apellido es ${obj[i].aPaterno}
+                            su otro apellido es ${obj[i].aMaterno}
                             y  su equipo es ${obj[i].equipo}</li>
                 </ul>
-                            `; 
+                            `;
                 salida+=` <div class="col s12 m6">
                                 <div class="card blue-grey darken-1">
                                     <div class="card-content white-text">
@@ -46,7 +57,7 @@ function ft() {
                                     </div>
                                 </div>
                             </div>
-                        `; 
+                        `;
                 salida+=`
                         <div class="col s12 m4 l4">
                             <div class="card blue lighten-5">
