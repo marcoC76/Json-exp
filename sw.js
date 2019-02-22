@@ -45,10 +45,10 @@ self.addEventListener('activate', e => {
         caches.keys()
             .then(cachesNames => {
                 return Promise.all(
-                    cachesNames.map(cachesName => {
-                        if (cacheWhitelist.indexOf(cachesName) === -1) {
+                    cachesNames.map(cacheName => {
+                        if (cacheWhitelist.indexOf(cacheName) === -1) {
                             //borar
-                            return caches.delete(cachesName);
+                            return caches.delete(cacheName);
                         }
                     })
                 );
