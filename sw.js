@@ -1,5 +1,5 @@
 // asignar nombre y version
-var CACHE_NAME = 'v1_cache_calificaciones';
+var CACHE_NAME = 'v2_cache_calificaciones';
 
 //archivos para cache
 
