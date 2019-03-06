@@ -6,8 +6,10 @@ var CACHE_NAME = 'v1_cache_calificaciones';
 var urlsCache = [
     './',
     './index.html',
+    './segundoP.html',
     './js.js',
     './busca.js',
+    './busca2.js',
     './main.css',
     './Chart.min.js',
     './materialize.css',
