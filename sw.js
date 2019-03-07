@@ -1,7 +1,6 @@
 // asignar nombre y version
 var CACHE_NAME = 'v3_cache_calificaciones';
 
-
 //archivos para cache
 
 var urlsCache = [
