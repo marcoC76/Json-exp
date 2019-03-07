@@ -22,8 +22,7 @@ function recibir() {
     });
 
     salida = `
-            <center> <h2 style="text-transform: uppercase;">${newArray[0].nombre}</h2></center>
-            <center> <h5 style="text-transform: uppercase;">${newArray[0].aPaterno} ${newArray[0].aMaterno}</h5></center>
+            <center> <h2 style="text-transform: uppercase;">${newArray[0].aPaterno.substr(0,1)+"·····"} ${newArray[0].aMaterno.substr(0,1)+"·····"} ${newArray[0].nombre.substr(0,1)+"·····"}</h2></center>
             <hr>
             <div class="row">
                 <div class="col s12 m3 center">
