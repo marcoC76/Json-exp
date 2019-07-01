@@ -11,6 +11,8 @@ body {
     animation: yourAnimation 1s forwards 0.7s linear;
 }
 #flotante{
+    padding-right:0.3%; 
+    bottom: 15%;
     opacity: 0;
     animation: yourAnimation 1s forwards 0.7s linear;
 }
@@ -40,4 +42,3 @@ body {
         opacity: 1;
         }
 }
-
